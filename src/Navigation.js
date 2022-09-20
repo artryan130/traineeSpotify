@@ -42,7 +42,7 @@ export default function Navigation(){
                             </>
                         }               
                     />
-                    <Route path="/login" element={<LoginPage/>}/>
+                    <Route path="/" element={<LoginPage/>}/>
                     <Route path="/signup" element={<SignUpPage/>}/>
                 </Routes>
             </BrowserRouter>
