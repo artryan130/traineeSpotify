@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LogoutIcon from '@mui/icons-material/Logout';
 import AlbumIcon from '@mui/icons-material/Album';
+import { AccountCircleRounded } from '@mui/icons-material';
 
 export default function SideBar(){
 
@@ -11,7 +12,7 @@ export default function SideBar(){
 
     return(
         <nav className='side-bar'>
-            <h2>ISpotify®</h2>
+            <h2>iSpotify®</h2>
             <ul>
                 <div className='with-icon'>
                     <AlbumIcon className='icon'/>
@@ -20,6 +21,10 @@ export default function SideBar(){
                 <div className='with-icon'>
                     <FavoriteIcon className='icon'/>
                     <li onClick={() => navigate('/curtidas')}>Músicas curtidas</li>
+                </div>
+                <div className='with-icon'>
+                    <AccountCircleRounded className='icon'/>
+                    <li onClick={() => navigate('/useraccount')}>Minha Conta</li>
                 </div>
                 <div className='with-icon logout'>
                     <LogoutIcon className='icon'/>

@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css'
+import './MusicList.css'
 import SideBar from "./SideBar";
 import MusicList from './MusicList';
 import ArtistsPage from './ArtistsPage';
@@ -10,6 +10,7 @@ import {
   Route,
 } from "react-router-dom";
 import SignUpPage from "./SignUpPage";
+import UserAccountPage from "./UserAccountPage";
 
 
 export default function Navigation(){
@@ -29,6 +30,14 @@ export default function Navigation(){
                         element={
                             <>
                                 <ArtistsPage />
+                                <SideBar/>
+                            </>
+                        }               
+                    />
+                    <Route path="/useraccount" 
+                        element={
+                            <>
+                                <UserAccountPage />
                                 <SideBar/>
                             </>
                         }               

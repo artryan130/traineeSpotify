@@ -12,7 +12,6 @@
     padding: 30px 0;
 }
 
-
 .signup-wrapper h1{
     color: white;
     font-size: 27px;
@@ -21,14 +20,12 @@
 .signup-wrapper h2{
     color: white;
     font-size: 27px;
-    /* margin-bottom: 15px; */
     text-align: center;
 }
 
 .text-input{
     width: 100%;
     margin-bottom: 15px ;
-    /* color: #C8C9CF; */
 }
 
 .signup-button{

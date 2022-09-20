@@ -1,11 +1,20 @@
 import React from "react";
 import './Login.css'
 import { Button } from "@mui/material";
-import { InputText } from "./Input";
+import { InputText } from "./InputText";
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import HttpsOutlinedIcon from '@mui/icons-material/HttpsOutlined';
 
+const buttonStyle = {
+    backgroundColor: 'white', 
+    color: 'black', 
+    width: '220px', 
+    borderRadius: '20px', 
+    fontWeight: 'bold'
+}; 
+
 export default function LoginPage(){
+
     return(
         <div className="login-wrapper">
             <h1>Ispotify®</h1>
@@ -19,7 +28,7 @@ export default function LoginPage(){
                 <div className="input-icon"><HttpsOutlinedIcon sx={{alignSelf: 'center'}}/></div>
             </div>
             <div className="login-button">
-                <Button variant="contained" color="success" sx={{backgroundColor: 'white', color: 'black', width: '220px', borderRadius: '20px', fontWeight: 'bold'}} >Entrar</Button>
+                <Button variant="contained" color="success" sx={buttonStyle} >Entrar</Button>
             </div>
             <h4>NÃO TEM UMA CONTA? <span>INSCREVA-SE</span></h4>
         </div>
