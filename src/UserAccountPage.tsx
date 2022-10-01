@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import './UserAccountPage.css';
-import {InputText} from './InputText.js';
+import {InputText} from './InputText.tsx';
 
 const style = {
   position: 'absolute',
