@@ -8,13 +8,18 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import React, { useState } from "react";
 
+type Music = {
+  musicName: string;
+  artist: string;
+  album: string;
+};
 interface ListItemProps {
   musicName: string;
   artist: string;
   album: string;
   number: number;
-  setMusicArray: (musicArray: any) => void;
-  musicArray: any;
+  setMusicArray: (musicArray: Music[]) => void;
+  musicArray: Music[];
   // musicArray: Array<>;
 }
 
